@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fileitem"
+    android:background="@drawable/fileitem_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:src="@drawable/ic_file_48dp"
+        android:adjustViewBounds="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/fileicon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <TextView
+        android:id="@+id/filename"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="File Name"
+        android:textSize="20dp"
+        app:layout_constraintRight_toLeftOf="@+id/filebox"
+        app:layout_constraintLeft_toRightOf="@+id/fileicon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/filetime"
+        android:text="0000-00-00 00:00:00"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/fileicon"
+        app:layout_constraintTop_toBottomOf="@+id/filename"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/fileperm"
+        android:text="rrr-rrr-rrr"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/filename"
+        app:layout_constraintLeft_toRightOf="@+id/filetime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/filesize"
+        android:text="File Size"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/filename"
+        app:layout_constraintLeft_toRightOf="@+id/fileperm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="8dp"/>
+
+    <CheckBox
+        android:id="@+id/filebox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="8dp"/>
+
+</android.support.constraint.ConstraintLayout>

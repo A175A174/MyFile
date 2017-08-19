@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/actionsearch"
+        android:title="@string/Search" />
+
+    <item
+        android:id="@+id/actionrefresh"
+        android:title="@string/Refresh" />
+
+    <item
+        android:id="@+id/addbook"
+        android:title="@string/addbook" />
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/home" />
+
+</menu>

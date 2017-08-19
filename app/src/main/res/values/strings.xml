@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">My File</string>
+    <string name="Setting">设置</string>
+    <string name="back">返回上层</string>
+    <string name="Exit">退出</string>
+    <string name="Backstage">后台</string>
+    <string name="Copy">复制</string>
+    <string name="Move">移动</string>
+    <string name="Operation">操作</string>
+    <string name="Rename">重命名</string>
+    <string name="Delete">删除</string>
+    <string name="Loading">Loading...</string>
+    <string name="Create">新建</string>
+    <string name="File">文件</string>
+    <string name="Folder">文件夹</string>
+    <string name="Ok">确定</string>
+    <string name="No">取消</string>
+    <string name="Finish">已完成</string>
+    <string name="CreateNo">创建失败,无权限或文件已存在</string>
+    <string name="DeleteNo">删除失败，无权限或文件不存在</string>
+    <string name="RenameNo">重命名失败,无权限或文件已存在</string>
+    <string name="Nopermission">无权限</string>
+    <string name="Refresh">刷新</string>
+    <string name="Search">搜索</string>
+    <string name="sdcard">/sdcard</string>
+    <string name="home">设置为启动目录</string>
+    <string name="NoExisted">启动目录不存在或无权访问，已转到内置储存目录</string>
+    <string name="clean">一键清理</string>
+    <string name="homes">主页</string>
+    <string name="books">书签</string>
+    <string name="addbook">添加到书签</string>
+    <string name="addclean">添加到垃圾清理名单</string>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="启动设置">
+        <EditTextPreference
+            android:defaultValue="@string/sdcard"
+            android:inputType="text"
+            android:key="startpath"
+            android:summary="/sdcard"
+            android:title="启动路径"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="longmenu"
+            android:summaryOff="关闭"
+            android:summaryOn="开启"
+            android:title="长按式菜单"/>
+        <Preference
+            android:summary="长按文件弹出菜单的方式"
+            android:title="说明"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="垃圾清理设置">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="stratclean"
+            android:summaryOff="关闭"
+            android:summaryOn="打开"
+            android:title="自动清理"/>
+        <Preference
+            android:summary="点击编辑"
+            android:title="垃圾名单">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.dwly.myfile"
+                android:targetClass="com.dwly.myfile.MainActivity"/>
+        </Preference>
+        <Preference
+            android:summary="每次打开软件自动清理"
+            android:title="说明"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="全局设定">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="icon"
+            android:summaryOff="不显示"
+            android:summaryOn="显示"
+            android:title="是否显示图片略缩图"/>
+        <Preference
+            android:key="version"
+            android:summary="1.0"
+            android:title="关于">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://m.baidu.com"/>
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
